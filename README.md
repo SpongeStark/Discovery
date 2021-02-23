@@ -8,3 +8,4 @@
 (Be sure the repertory is well pulled)  
 (Add the name to check if the sync works well)
 - Kai YANG
+- Letao WANG
