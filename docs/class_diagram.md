@@ -62,7 +62,6 @@
 > ## class : 商船 (`MerchantBoat`) `extends` (`Boat`)
 > ### Attributs:
 > -   搭载种类 : Carrying type : CarryType
-
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
@@ -71,7 +70,6 @@
 > ## class : 军舰 (`WarBoat`)
 > ### Attributs:
 > -     
-
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
