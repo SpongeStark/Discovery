@@ -11,13 +11,17 @@
 > ## 枚举：`PortType`
 > COMMERCIAL, MILITARY
 
-> ## Class : Country
+> ## 枚举：`CarryType`
+> MATERIAL, COMMODITY, FINANCE
+
+> ## Class : 国家(`Country`)
 > ### Attributs :
-> - name : String
-> - city : List\<City\>
-> - finance : int
-> - boat : Boat
-> - technology : int
+> - 国家名字 name : String
+> - 城市 city : List\<City\>
+> - 资金 finance : int
+> - 工业原料 Industrial raw material : int
+> - 船 boat : Boat
+> - 科技 technology : int
 
 > ## 类：港口 (`Port`)
 > ### 字段：
@@ -25,6 +29,7 @@
 > - 港口类型 (type)：PortType
 > - 港口防御 (defense)：int
 > - 防卫炮火 (ack)：int
+> - 造船上限 boats limit : int
 > - 船 (boats)：List\<Boat\>
 
 > ## 类：城市 (`City`)
@@ -49,6 +54,24 @@
 > ## 类：渔船 (`FishingBoat`) `extends` 船(`Boat`)
 > ### 字段：
 > - 
+> ### 方法：
+> - 获得基数 (`getBaseValue()`)
+> - 获得系数 (`getCoefficient()`)
+> - 
+
+> ## class : 商船 (`MerchantBoat`) `extends` (`Boat`)
+> ### Attributs:
+> -   搭载种类 : Carrying type : CarryType
+
+> ### 方法：
+> - 获得基数 (`getBaseValue()`)
+> - 获得系数 (`getCoefficient()`)
+> - 获得运载上限(`getCarryLimit()`)
+
+> ## class : 军舰 (`WarBoat`)
+> ### Attributs:
+> -     
+
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
