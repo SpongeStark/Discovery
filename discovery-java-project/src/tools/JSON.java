@@ -16,7 +16,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class JSON {
-
     public static void requestURL(String url) throws IOException, InterruptedException {
         // 建立客户端
         HttpClient client = HttpClient.newHttpClient();
