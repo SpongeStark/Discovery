@@ -15,7 +15,7 @@
 > MATERIAL, COMMODITY, FINANCE
 
 > ## 枚举:`WarBoatType`
-> THREEMASTED, CARAVEL, GALEN, CLARK
+> BARQUE, CARAVEL, GALEN, CLARK
 
 > ## 枚举:`CountryName`
 > SPAIN， NETHERLANDS， GREATBRITAIN， JAPAN
@@ -59,7 +59,7 @@
 
 > ## 类：渔船 (`FishingBoat`) `extends` 船(`Boat`)
 > ### 字段：
-> - 渔获量 catch : int
+> - 渔获量 fishCatch : int
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
