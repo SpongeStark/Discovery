@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Program {
     public static void main(String[] args) {
-        MainWindow mainWindow = new MainWindow();
+         MainWindow mainWindow = new MainWindow();
         mainWindow.showWindow(100,100);
     }
 }
