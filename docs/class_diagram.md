@@ -14,6 +14,9 @@
 > ## 枚举：`CarryType`
 > MATERIAL, COMMODITY, FINANCE
 
+> ## 枚举:`WarBoatType`
+> THREEMASTED, CARAVEL, GALEN, CLARK
+
 > ## Class : 国家(`Country`)
 > ### Attributs :
 > - 国家名字 name : String
@@ -53,25 +56,24 @@
 
 > ## 类：渔船 (`FishingBoat`) `extends` 船(`Boat`)
 > ### 字段：
-> - 
+> - 渔获量 catch : int
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
-> - 
 
 > ## class : 商船 (`MerchantBoat`) `extends` (`Boat`)
 > ### Attributs:
-> -   搭载种类 : Carrying type : CarryType
+> -   搭载种类 : carryType : CarryType
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
 > - 获得运载上限(`getCarryLimit()`)
 
-> ## class : 军舰 (`WarBoat`)
+> ## class : 军舰 (`WarBoat`) `extends` (`Boat`)
 > ### Attributs:
-> -     
+>  - 种类 (type) : WarBoatType
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
-> - 
-
+> - 获得陆军运载量 (`getArmyCarry() :`)
+> - 获得水手运载量 (`getSailorCarry() :`)
