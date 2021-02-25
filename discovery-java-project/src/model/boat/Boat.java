@@ -1,4 +1,6 @@
-package model;
+package model.boat;
+
+import model.enumClass.Size;
 
 public class Boat {
     protected Size size;

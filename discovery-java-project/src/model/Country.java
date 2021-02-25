@@ -1,5 +1,8 @@
 package model;
 
+import model.boat.Boat;
+import model.enumClass.CountryName;
+
 import java.util.ArrayList;
 
 public class Country {

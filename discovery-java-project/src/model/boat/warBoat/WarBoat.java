@@ -1,6 +1,9 @@
-package model;
+package model.boat.warBoat;
 
-public class WarBoat extends Boat{
+import model.boat.Boat;
+import model.enumClass.Size;
+
+public class WarBoat extends Boat {
 
 //    private WarBoatType warBoatType;
 

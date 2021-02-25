@@ -1,4 +1,7 @@
-package model;
+package model.boat;
+
+import model.enumClass.CarryType;
+import model.enumClass.Size;
 
 public class MerchantBoat extends Boat {
     private CarryType carryType;

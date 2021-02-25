@@ -1,4 +1,4 @@
-package model;
+package model.enumClass;
 
 public enum CountryName {
     SPAIN,

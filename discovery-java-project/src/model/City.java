@@ -1,5 +1,7 @@
 package model;
 
+import model.enumClass.Size;
+
 import java.util.ArrayList;
 
 public class City {

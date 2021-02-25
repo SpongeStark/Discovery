@@ -1,6 +1,8 @@
-package model;
+package model.boat.warBoat;
 
-public class CaravelWarBoat extends WarBoat{
+import model.enumClass.Size;
+
+public class CaravelWarBoat extends WarBoat {
 
     private int base;
     private int coefficient;
