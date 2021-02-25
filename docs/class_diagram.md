@@ -17,12 +17,15 @@
 > ## 枚举:`WarBoatType`
 > THREEMASTED, CARAVEL, GALEN, CLARK
 
+> ## 枚举:`CountryName`
+> SPAIN， NETHERLANDS， GREATBRITAIN， JAPAN
+
 > ## Class : 国家(`Country`)
 > ### Attributs :
-> - 国家名字 name : String
+> - 国家名字 name : CountryName
 > - 城市 city : List\<City\>
 > - 资金 finance : int
-> - 工业原料 Industrial raw material : int
+> - 工业原料 material : int
 > - 船 boat : Boat
 > - 科技 technology : int
 
