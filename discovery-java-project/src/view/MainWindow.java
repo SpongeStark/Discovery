@@ -2,50 +2,33 @@ package view;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 
 public class MainWindow extends JFrame {
+    private JLayeredPane layeredPane;
+    public MainWindow() {
+        setLayout(new GridLayout(1, 1));
+        setTitle("Discovery");
+        setBounds(50,50,720,480 );
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
 
-    JPanel mainPanel;
-    JButton btn_showChat;
+        layeredPane = new JLayeredPane() {
+            public void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                ImageIcon image = new ImageIcon("resources/WorldMap_Small.png");
+                //设置图片大小跟随面板大小
+                image.setImage(image.getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_AREA_AVERAGING));
+                g.drawImage(image.getImage(), 0, 0, this);
+            }
+        };
 
-
-    public MainWindow(){
-        super();
-        initialize();
+        JLabel label = new JLabel("hello");
+        label.setBounds(50,50,100,100);
+        layeredPane.add(label);
+        add(layeredPane);
     }
 
-    private void initialize(){
-        // 设置窗口大小
-        this.setSize(400,300);
-
-        // 初始化mainPanel
-        mainPanel = new JPanel();
-        // 将mainPanel加入到window
-        this.add(mainPanel);
-
-        //初始化btn_showChat按钮
-        btn_showChat = new JButton();
-        btn_showChat.setText("show the chat window");
-        btn_showChat.addActionListener(this::btn_SHowChat_Click);
-        // 将btn_showChat加入到window
-        mainPanel.add(btn_showChat);
-
-
+    public static void main(String[] args) {
+        new MainWindow();
     }
-
-    public void showWindow(int x, int y){
-        this.setLocation(x,y);
-        this.setVisible(true);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
-
-    public void showWindow(Point p){
-        showWindow(p.x, p.y);
-    }
-
-    public void btn_SHowChat_Click(ActionEvent e){
-        TestChatForm testChatForm = new TestChatForm();
-    }
-
 }

@@ -1,13 +1,10 @@
 package main;
 
-import tools.JSON;
-import view.MainWindow;
-
-import java.io.IOException;
+import view.test.TestWindow;
 
 public class Program {
     public static void main(String[] args) {
-         MainWindow mainWindow = new MainWindow();
+         TestWindow mainWindow = new TestWindow();
         mainWindow.showWindow(100,100);
     }
 }
