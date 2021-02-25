@@ -15,14 +15,17 @@
 > MATERIAL, COMMODITY, FINANCE
 
 > ## 枚举:`WarBoatType`
-> THREEMASTED, CARAVEL, GALEN, CLARK
+> BARQUE, CARAVEL, GALEN, CLARK
+
+> ## 枚举:`CountryName`
+> SPAIN， NETHERLANDS， GREATBRITAIN， JAPAN
 
 > ## Class : 国家(`Country`)
 > ### Attributs :
-> - 国家名字 name : String
+> - 国家名字 name : CountryName
 > - 城市 city : List\<City\>
 > - 资金 finance : int
-> - 工业原料 Industrial raw material : int
+> - 工业原料 material : int
 > - 船 boat : Boat
 > - 科技 technology : int
 
@@ -56,7 +59,7 @@
 
 > ## 类：渔船 (`FishingBoat`) `extends` 船(`Boat`)
 > ### 字段：
-> - 渔获量 catch : int
+> - 渔获量 fishCatch : int
 > ### 方法：
 > - 获得基数 (`getBaseValue()`)
 > - 获得系数 (`getCoefficient()`)
