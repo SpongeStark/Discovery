@@ -28,7 +28,9 @@
             <children>
               <component id="b3b00" class="javax.swing.JTextArea" binding="textArea">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
             </children>
           </scrollpane>
